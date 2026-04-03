@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>내 버킷리스트 카드</title>
+    <style>
+        /* 기본 카드 디자인 (자유롭게 수정 가능) */
+        .card {
+            width: 300px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);
+            /* 배지의 기준점이 되기 위한 필수 속성 */
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* 1. 배지 (absolute) 관련 CSS를 작성하세요 */
+        .badge {
+            position: absolute;
+            top: 50px;
+            right: 860px;
+            background: red;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        /* 2. 비밀 메모 (visibility) 및 hover 효과 관련 CSS를 작성하세요 */
+        .secret-memo {
+            visibility: hidden;
+        }
+
+        .card:hover .secret-memo {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="data:image/jpeg;base64,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"
+            alt="지스타 로고">
+
+
+        <h2>✨ 윤혁진의 꿈</h2>
+        <p>🛫 1. 혼자 부산 여행으로 지스타 가기</p>
+        <p>🧑‍💻 2. 첫 게임 제작하고 배포하기</p>
+        <div class="secret-memo">🤫 TMI: 작년에 혼자 갈려고 하다가 친구들이 따라와서 제대로 관람 못함</div>
+    </div>
+    <div class="badge">Game🎮</div>
+</body>
+
+</html>
