@@ -33,10 +33,10 @@
         }
 
         /* 2. 비밀 메모 (visibility) 및 hover 효과 관련 CSS를 작성하세요 */
-        .secret-memo {
+        .secret_memo {
             visibility: hidden;
         }
-        .card:hover .secret-memo {
+        .card:hover .secret_memo {
             visibility: visible;
         }
     </style>
@@ -50,7 +50,7 @@
         <h2>📖 김찬희의 버킷리스트</h2>
         <p>📖 C# 언어 구조,문법 마스터하기</p>
         <p>📖 팀에게 민폐끼치지 말기</p>
-        <div class="secret-memo">tmi: 의지박약</div>
+        <div class="secret_memo">tmi: 의지박약</div>
     </div>
     <div class="badge">📖C#</div>
 </body>
