@@ -33,7 +33,7 @@
         }
 
         /* 2. 비밀 메모 (visibility) 및 hover 효과 관련 CSS를 작성하세요 */
-        .secret_memo {
+        .secret-memo {
             visibility: hidden;
         }
         .card:hover .secret_memo {
@@ -45,7 +45,7 @@
 <body>
 
     <div class="card">
-        <img src="csharp.jpg"alt="C# 로고">
+        <img src="https://youngchangoon.github.io/assets/img/csharp.png"alt="C# 로고">
 
         <h2>📖 김찬희의 버킷리스트</h2>
         <p>📖 C# 언어 구조,문법 마스터하기</p>
